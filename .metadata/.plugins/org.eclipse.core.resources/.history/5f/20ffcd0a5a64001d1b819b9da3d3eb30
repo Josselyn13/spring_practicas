@@ -1,0 +1,12 @@
+
+<HTML>
+<body>
+<H1>Hola index.jsp</H1>
+<form action="login" method="GET">
+	<input type="submit" value="ir a login"/>
+</form>
+</body>
+</HTML>
+
+
+

@@ -1,0 +1,5 @@
+package com.jimg.model;
+
+public class Usuario {
+
+}

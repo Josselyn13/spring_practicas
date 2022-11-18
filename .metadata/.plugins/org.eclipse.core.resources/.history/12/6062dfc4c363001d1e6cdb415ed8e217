@@ -1,0 +1,11 @@
+package com.jimg;
+
+@RestController
+public class HolaMundoController {
+	
+	@RequestMapping
+	public string saludar() {
+		return "Hola Mundo"
+	}
+
+}

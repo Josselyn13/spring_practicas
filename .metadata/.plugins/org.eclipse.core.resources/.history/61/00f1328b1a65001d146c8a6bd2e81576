@@ -1,0 +1,28 @@
+package com.jimg.controller;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+
+import com.jimg.model.Usuario;
+
+@Controller
+public class DemoController {
+	
+	@GetMapping("/")
+	public String index(Model modelo) {
+		List<Usuario> usuarios = new ArrayList<Usuario>();
+		usuarios.add(new Usuario(1L, "Usuario1", "Josselyn Ileana Mosco García"));
+		usuarios.add(new Usuario(1L, "Usuario2", "Osgualdo Resendiz Tolentino"));
+		usuarios.add(new Usuario(1L, "Usuario3", "Elizabeth García Cisneros"));
+		usuarios.add(new Usuario(1L, "Usuario4", "Juan Martín Mosco Salinas"));
+
+		
+		modelo.addAttribute("usuarios", usuarios);
+		return "index";
+	}
+
+}
